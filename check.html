@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop</title>
+    <meta name="description" content="Modern effects and styles for off-canvas navigation with CSS transitions and SVG animations using Snap.svg" />
+    <meta name="keywords" content="sidebar, off-canvas, menu, navigation, effect, inspiration, css transition, SVG, morphing, animation" />
+    <meta name="author" content="Codrops" />
+    <!-- <link rel="shortcut icon" href="../favicon.ico"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/starter-template.css" />
+    <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+    <!-- individual effect -->
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!--container-wrap start-->
+    <div class="container-wrap">
+        <!--menu start-->
+        <div class="menu-wrap">
+            <nav class="menu-top">
+                <div class="icon-list">
+                    <a href="#"><i class="fa fa-fw fa-star-o"></i></a>
+                    <a shref="#"><i class="fa fa-fw fa-bell-o"></i></a>
+                    <a href="#"><i class="fa fa-fw fa-envelope-o"></i></a>
+                    <a href="#"><i class="fa fa-fw fa-comment-o"></i></a>
+                </div>
+            </nav>
+            <nav class="menu-side">
+                <a href="#">Recent Stories</a>
+                <a href="#">Reading List</a>
+                <a href="#">My Stories</a>
+                <a href="#">Categories</a>
+            </nav>
+        </div>
+        <button class="menu-button" id="open-button">Open Menu</button>
+        <!--menu end-->
+        <!--menu start-->
+        <div class="content-wrap">
+            <div class="content">
+                <div class="pull-right">
+                    <button data-dialog="somedialog" class="trigger">Login</button>
+                </div>
+                <header class="codrops-header">
+                    <h1>Hello world<span></span></h1>
+                    <!-- <nav class="codrops-demos">
+                            <a class="current-demo" href="index.html">Top Side</a>
+                            <a href="sideslide.html">Side Slide</a>
+                        </nav> -->
+                </header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 visible-md-*">
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="show">
+                                <h2>Your Cart</h2>
+                                <form action="#" method="post" id="cartform">
+                                    <ul class="cart-list">
+                                        <li class="head">
+                                            <div class="col-desc">Item:</div>
+                                            <div class="col-notdesc">
+                                                <div class="col-price">Price:</div>
+                                                <div class="col-quantity">Quantity:</div>
+                                                <div class="col-total">Total:</div>
+                                                <div class="col-remove"></div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="col-desc">
+                                                <a class="col-img"><img  src="img/ppp1.jpg" /></a>
+                                                <div class="col-text">product name</div>
+                                            </div>
+                                            <div class="col-notdesc">
+                                                <div class="col-price">2342</div>
+                                                <div class="col-quantity">
+                                                    <input type="text" name="" class="col-input" value="1" />
+                                                </div>
+                                                <div class="col-total">23423</div>
+                                                <div class="col-remove"> <a href="#">remove</a></div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="col-desc">
+                                                <a class="col-img"><img  src="img/ppp1.jpg" /></a>
+                                                <div class="col-text">product name</div>
+                                            </div>
+                                            <div class="col-notdesc">
+                                                <div class="col-price">2342</div>
+                                                <div class="col-quantity">
+                                                    <input type="text" name="" class="col-input" value="1" />
+                                                </div>
+                                                <div class="col-total">23423</div>
+                                                <div class="col-remove"> <a href="#">remove</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="update-continue">
+
+                                        <a class="continue" href="#" title="">Continue shopping</a>
+                                    </div>
+                                    <div class="under-cart">
+                                        <div class="column-full">
+                                            <div>
+                                                <p>Subtotal</p>
+
+
+
+                                                
+                                                <h2 class="subtotal"><span class="money" data-currency-usd="$59.00 USD">$59.00 USD</span></h2>
+                                            </div>
+                                            <p class="comment">Price excludes delivery, which is applied at checkout</p>
+                                            <p class="comment">Order changes are only possible within 6 hours of checkout.</p>
+                                            <p class="comment rte">LayBag process all orders in <strong>USD</strong>. While the content of your cart is currently displayed in <strong class="selected-currency">USD</strong>, you will checkout using <strong>USD</strong> at the most current exchange rate. </p>
+                                         <input type="submit" class="checkout-btn" name="checkout" value="Check Out">
+                                        </div>
+                                        <!-- <input type="submit" class="checkout-btn" name="checkout" value="Check Out"> -->
+
+      
+                                    </div>
+                                </form>
+                            </div>
+                            <section class="related">
+                                notice:
+                            </section>
+                        </div>
+                        <div class="col-md-2 visible-md-*">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /content-wrap end -->
+    </div>
+    <!--container-wrap end-->
+    <div class="cd-cart-container empty">
+        <a href="#" class="cd-cart-trigger">
+                Cart
+                <ul class="count"> <!-- cart items count -->
+                    <li id="count">0</li>
+                    <li>0</li>
+                </ul> <!-- .count -->
+            </a>
+        <div class="cd-cart">
+            <div class="wrapper">
+                <header>
+                    <h2>Cart</h2>
+                    <a class="remove-all" href="#">delete all</a>
+                    <!-- <span class="delete all">Item removed. <a href="#0">Undo</a></span> -->
+                </header>
+                <div class="body">
+                    <ul id="products">
+                        <!-- products added to the cart will be inserted here using JavaScript -->
+                    </ul>
+                </div>
+                <footer>
+                    <a href="#" class="checkout"><em>Checkout - <span id="totalAmount">0</span> $</em></a>
+                </footer>
+            </div>
+        </div>
+        <!-- .cd-cart -->
+    </div>
+    <!-- cd-cart-container -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dialogFx.js"></script>
+    <script src="js/cart.js"></script>
+    <script type="text/javascript">
+    // var cart;
+    // $('body').ready(function() {
+    //     var cart = new Cart();
+    //     cart.init();
+    //     cart.initData();
+    // });
+    //把数据取出来:
+
+
+    </script>
+</body>
+
+</html>
